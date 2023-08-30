@@ -9,3 +9,10 @@ for line in matrix:
     print()
 print()
 print('\n'.join([' '.join('{:{width}}'.format(element, width=4) for element in line) for line in matrix]))
+
+def ex5(matrix):
+    for i in range(n):
+        matrix[i].pop(-1)
+        s = sum(matrix[i])
+        matrix[i].append(s)
+    return matrix
