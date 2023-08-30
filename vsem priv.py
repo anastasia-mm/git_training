@@ -19,3 +19,11 @@ def ex_9 (matrix):
             column.append(matrix[j][i])
         min_column.append(min(column))
     return max(min_column)
+
+def ex5(matrix):
+    for i in range(n):
+        matrix[i].pop(-1)
+        s = sum(matrix[i])
+        matrix[i].append(s)
+    return matrix
+
