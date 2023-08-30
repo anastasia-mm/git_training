@@ -19,5 +19,3 @@ def ex_9 (matrix):
             column.append(matrix[j][i])
         min_column.append(min(column))
     return max(min_column)
-
-print(ex_9(matrix))
